@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>  </title>
+	</head>
+	
+	<body>
+		
+		<label for="novaTarefa">Nova Tarefa:</label>
+		<input type="text" id="novaTarefa">
+		<button onclick="adicionarTarefa()">Adicionar tarefa</button>
+		
+		<p>Tarefas:</p>
+		<ul>
+		
+		</ul>
+		
+	</body>
+
+	<script>
+		
+		function adicionarTarefa(){
+		
+			var tarefa = document.getElementById("novaTarefa").value;	
+				
+			const lista = document.querySelector('ul');
+			const novoItem = document.createElement('li');
+			novoItem.textContent = tarefa;
+
+			lista.appendChild(novoItem); // Adicionando o novo item ao fim da lista
+		}
+		
+	</script>
+
+</html>
